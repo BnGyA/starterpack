@@ -1,0 +1,37 @@
+{
+  "name": "headstart",
+  "version": "1.0.0",
+  "description": "C'est comme son nom l'indique un dossier permettant de prendre une longueur d'avance lors du départ d'un nouveau projet! \r Au lieu de copier tous les fichiers de projets en projets et de devoir tout reconfigurer (gulp, libsass, architecture), je reprends ce dossier pour gagner du temps et garder le même workflow.\r Le but du dépôt n'est pas d'avoir une config bullet proof capable de gérer tous les cas mais juste de répondre à mes besoins et démarrer plus rapidement mes projets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Squiweb/headstart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Squiweb/headstart/issues"
+  },
+  "homepage": "https://github.com/Squiweb/headstart#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-image-resize": "^0.8.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp.spritesmith": "^4.2.4"
+  }
+}
