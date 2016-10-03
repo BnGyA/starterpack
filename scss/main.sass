@@ -11,7 +11,7 @@
 
 $bgmain: #191919
 $defaultSize: 100%
-$textAlignCenter: center
+$defaultText: 0
 
 
 header
@@ -19,16 +19,35 @@ header
   height: $defaultSize
   width: $defaultSize
 
+
 h1
-  color: green
+  color: #AB8E60
   font-size: 34px
-  font-weight: 700
-  text-align: $textAlignCenter
-  padding-top: 100px
+  font-weight: 300
+  text-align: center
+  margin: $defaultText
+  padding: $defaultText
+  letter-spacing: 2px
+  position: relative
+  top: 130px
 
 h2
-  color: yellow
+  color: #F7F7F7
   font-size: 55px
+  font-weight: 400
   text-transform: uppercase
-  text-decoration: underline
-  text-align: $textAlignCenter
+  text-decoration: line-through
+  text-align: center
+  margin: $defaultText
+  padding: $defaultText
+  letter-spacing: 4px
+  position: relative
+  top: 150px
+
+.title_box
+  width: 500px
+  height: 400px
+  position: absolute
+  left: 50%
+  top: 50%
+  margin: -200px 0 0 -250px
