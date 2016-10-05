@@ -1,10 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700';
 
-@import "../node_modules/susy/sass/susy";
-@import "custom/grid";
 @import "custom/reset";
-@import "custom/fonts";
+@import "../node_modules/susy/sass/susy";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 @import "custom/breakpoints";
+@import "custom/grid";
+@import "custom/fonts";
 @import "custom/mixins";
 @import "custom/colors";
 @import "libs/outdatedbrowser";
