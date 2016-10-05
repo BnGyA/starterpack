@@ -1,0 +1,37 @@
+//$susy: (columns: 6, container: 960px, gutter: 1/4, gutter-position: inside)
+//$susy: (columns: 6, container: 960px, gutter: 25px/250px, gutter-position: inside-static, column-width:250px)
+//@include border-box-sizing
+
+.container{
+  @include container;
+}
+/*
+//.title_box
+  //background: red
+  //@include span( 2 of 4)
+  @include span(3)
+//.sidebar
+  background: yellow
+  //@include span(1 of 4 last)
+  //@include span(1 at 4 of 4 )
+  @include span(3)
+
+
+//.container
+  @include container
+//.first
+  @include span(6)
+  background: yellow
+//.second
+  @include span(6)
+  background: red
+
+
+//$bootstrap: layout(columns: 6, container: 1000px, gutter: 25px/250px, gutter-position: inside-static, column-width:250px)
+//@media(min-width: 700px)
+  @include layout($bootstrap)
+  .container
+    @include container
+  .first
+    background: green
+*/

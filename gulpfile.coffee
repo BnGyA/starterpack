@@ -14,7 +14,7 @@ $ = require('gulp-load-plugins')()
 #TASK
 
 gulp.task 'sass', ->
-    gulp.src "#{path.scss}*.sass"
+    gulp.src "#{path.scss}*.scss"
     .pipe $.plumber(errorHandler: (err) ->
         console.log err
         @emit "end"
@@ -63,9 +63,10 @@ gulp.task 'compress', ->
 gulp.task 'default', ->
     browserSync
         notify: false
-        server: {baseDir: './'}
+        proxy: 'localhost'
 #WATCH
     gulp.watch ['**/*.html'], browserSync.reload
+    gulp.watch ['**/*.php'], browserSync.reload
     gulp.watch "#{path.img}pictures/@2x/*.jpg", ['compressNonRetina']
-    gulp.watch "#{path.scss}**/*.sass", ['sass']
+    gulp.watch "#{path.scss}**/*.scss", ['sass']
     gulp.watch "#{path.js}**/*.js", ['compress']

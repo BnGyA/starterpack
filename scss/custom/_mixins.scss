@@ -1,0 +1,60 @@
+html, body{
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+*{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.cf:before, .cf:after{
+  content: " ";
+  display: table;
+}
+
+.cf:after{
+  clear: both
+}
+
+
+
+@mixin p-lh($fs){
+  line-height: $fs * 1.5;
+  font-size: $fs;
+}
+
+
+.centery{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.centerx{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centerxy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+
+.pseudo{
+  content: "";
+  display: block;
+  position: absolute;
+}

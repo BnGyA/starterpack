@@ -1,0 +1,21 @@
+.btn{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $sofia;
+  padding: 10px 7px;
+  font-size: 15px;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+
+.btn-blue{
+  color: $azur;
+  border: 2px solid $azur;
+}
+
+.btn-moutarde{
+  border: 2px solid $moutarde;
+  color: $moutarde;
+}
