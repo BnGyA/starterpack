@@ -1,9 +1,32 @@
 @include border-box-sizing
 
+/*--------------------------------
+  Breakpoints
+---------------------------------*/
+$xs: 320px;
+$sm: 480px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+/*--------------------------------
+  Layouts
+---------------------------------*/
+
 $susy: (columns: 12, container: 100%, gutter: 1/4, gutter-position: inside);
 $mobile: (columns: 12, container: 960px, gutter: 30px/100px,column-width:100px, gutter-position: inside-static);
+
+
+/*--------------------------------
+  Rules
+---------------------------------*/
 .container{
   @include container;
+}
+
+
+@include susy-breakpoint($xs, $mobile){
+  @include container
 }
 
 
