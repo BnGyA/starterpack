@@ -3,18 +3,23 @@
 /*--------------------------------
   Breakpoints
 ---------------------------------*/
-$xs: 320px;
-$sm: 480px;
+$xs: 0px;
+$sm: 544px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
+//Container width	None (auto)	576px	720px	940px	1140px
 
 /*--------------------------------
   Layouts
 ---------------------------------*/
 
-$susy: (columns: 12, container: 100%, gutter: 1/4, gutter-position: inside);
-$mobile: (columns: 12, container: 960px, gutter: 30px/100px,column-width:100px, gutter-position: inside-static);
+$susy: (columns: 12, container: 100%, gutter: 30px/100px, column-width:100px, gutter-position: inside-static);
+$small: (columns: 12, container: 576px, gutter: 30px/100px, column-width:100px, gutter-position: inside-static);
+$medium: (columns: 12, container: 720px, gutter: 30px/100px, column-width:100px, gutter-position: inside-static);
+$large: (columns: 12, container: 940px, gutter: 30px/100px, column-width:100px, gutter-position: inside-static);
+$xlarge: (columns: 12, container: 1140px, gutter: 30px/100px, column-width:100px, gutter-position: inside-static);
 
 
 /*--------------------------------
@@ -24,13 +29,26 @@ $mobile: (columns: 12, container: 960px, gutter: 30px/100px,column-width:100px, 
   @include container;
 }
 
-
-@include susy-breakpoint($xs, $mobile){
-  @include container
+@include susy-breakpoint($sm, $small){
+  .container{
+    @include container;
+  }
 }
 
+@include susy-breakpoint($md, $medium){
+  .container{
+    @include container;
+  }
+}
 
+@include susy-breakpoint($lg, $large){
+  .container{
+    @include container;
+  }
+}
 
-@include susy-breakpoint(320px, $mobile){
-  @include container
+@include susy-breakpoint($xl, $xlarge){
+  .container{
+    @include container;
+  }
 }
