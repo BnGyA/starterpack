@@ -8,51 +8,48 @@
 @import "custom/colors"
 @import "libs/outdatedbrowser"
 
-/* Text
 
-body
-  font-family: $play
+$bgmain: #191919
+$defaultSize: 100%
+$defaultText: 0
 
-p
-  @include p-lh(16px)
+
+header
+  background-color: $bgmain
+  height: $defaultSize
+  width: $defaultSize
+
 
 h1
-  font-size: 60px
-  color: $grey
-  margin-bottom: 15px
+  color: #AB8E60
+  font-size: 34px
+  font-weight: 300
+  text-align: center
+  margin: $defaultText
+  padding: $defaultText
+  letter-spacing: 2px
+  position: relative
+  top: 130px
+  margin: 0 auto
+
 h2
-  font-size: 40px
-  color: $moutarde
-  font-family: $sofia
+  color: #F7F7F7
+  font-size: 55px
   font-weight: 400
-  margin-bottom: 10px
-  margin-top: 0
-h3
-  font-size: 30px
-  color: $grey
-  font-family: $sofia
-  margin-top: 0
+  text-transform: uppercase
+  text-decoration: line-through
+  text-align: center
+  margin: $defaultText
+  padding: $defaultText
+  letter-spacing: 4px
+  position: relative
+  top: 150px
+  margin: 0 auto
 
-#menu
-  padding: 0 5%
-
-#loader
-  @extend .pseudo
-  height: 100%
-  width: 0
-  background: #FFF
-  z-index: 9999
-  top: 0
-  position: fixed
-/* Imports
-
-@import "custom/navigation"
-@import "custom/home"
-@import "custom/btn"
-@import "custom/team"
-@import "custom/studio"
-@import "custom/works"
-
-.bodymovin
-  height: 100vh
-  width: auto
+.title_box
+  width: 500px
+  height: 400px
+  position: absolute
+  left: 50%
+  top: 50%
+  margin: -200px 0 0 -250px
