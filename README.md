@@ -5,3 +5,4 @@ npm install --save-dev gulp coffee-script gulp-load-plugins gulp-sass gulp-size 
 
 
 ## Purpose
+Head start on project
