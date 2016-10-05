@@ -25,6 +25,19 @@ $xlarge: (columns: 12, container: 1140px, gutter: 30px/100px, column-width:100px
 /*--------------------------------
   Rules
 ---------------------------------*/
+
+.first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth, .tenth, .eleventh, .twelfth{
+  @include span(1)
+  background: blue;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.second, .fourth, .sixth, .eighth, .tenth, .twelfth{
+  background: lighten(blue, 20%);
+}
+
 .container{
   @include container;
 }
