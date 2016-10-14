@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/Squiweb/headstart#readme",
   "devDependencies": {
-    "browser-sync": "^2.17.0",
+    "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.17.3",
     "coffee-script": "^1.11.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
@@ -31,7 +32,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
-    "gulp-uglify": "^1.5.4"
-
+    "gulp-uglify": "^1.5.4",
+    "susy": "^2.2.12"
   }
 }
